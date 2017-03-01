@@ -37,4 +37,12 @@ public class RomanNumeralsConverterTest {
 
 		assertEquals("Test4 didn't work", "IV", converter.convert("4"));
 	}
+	
+	@Test
+	public void testforFiveThroughEight() {
+
+		assertEquals("Test5 didn't work", "V", converter.convert("5"));
+		assertEquals("Test5 didn't work", "X", converter.convert("10"));
+		
+	}
 }
