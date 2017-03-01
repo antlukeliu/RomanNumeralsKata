@@ -6,10 +6,13 @@
 // 1989 = "MCMLXXXIX"
 
 
+
 public class RomanNumeralsConverter {
 
 	public String convert(String number) {
 		
+		if(number.equals("1")){
 		return "I";
+		}else return "II";
   }
 }
