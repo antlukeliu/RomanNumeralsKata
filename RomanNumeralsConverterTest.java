@@ -11,4 +11,10 @@ public class RomanNumeralsConverterTest {
 		assertEquals("Test1 didn't work", "I", converter.convert("1"));
 	}
 	
+	@Test
+	public void testforTwo() {
+		
+		RomanNumeralsConverter converter = new RomanNumeralsConverter();
+		assertEquals("Test2 didn't work", "II", converter.convert("2"));
+	}
 }
