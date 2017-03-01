@@ -45,4 +45,12 @@ public class RomanNumeralsConverterTest {
 		assertEquals("Test5 didn't work", "X", converter.convert("10"));
 		
 	}
+	@Test
+	public void testforNines() {
+
+		assertEquals("IX", converter.convert("9"));
+		assertEquals("XIX", converter.convert("19"));
+		
+	}
+	
 }
