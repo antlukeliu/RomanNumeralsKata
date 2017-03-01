@@ -20,8 +20,23 @@ public class RomanNumeralsConverter {
 
 	public String convert(String number) {
 		
-		if(number.equals("1")){
-		return "I";
-		}else return "II";
-  }
+		int[] arabicNumArray = {10,9,5,4,1};
+		String[] romanNumArray = {"X", "IX", "V", "IV", "I"};
+		String romanNum = "";
+		
+		int inputNum = Integer.parseInt(number);
+		
+		
+		while(inputNum > 0){
+			for(int i=0; i <arabicNumArray.length; i++){
+				if(inputNum >= arabicNumArray[i]){
+					romanNum += romanNumArray[i];
+					inputNum -= arabicNumArray[i];
+					i=0;
+				}
+			}
+		}
+		return romanNum;
+		
+}
 }
