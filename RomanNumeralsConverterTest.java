@@ -160,5 +160,15 @@ public class RomanNumeralsConverterTest {
 		assertEquals("MMMXCVI", converter.convert("3096"));	
 	}
 	
+	@Test
+	public void testCasesGivenInKata() {
+
+		assertEquals("I", converter.convert("1"));
+		assertEquals("III", converter.convert("3"));
+		assertEquals("IX", converter.convert("9"));
+		assertEquals("MLXVI", converter.convert("1066"));
+		assertEquals("MCMLXXXIX", converter.convert("1989"));
+	}
+	
 	
 }
