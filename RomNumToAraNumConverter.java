@@ -19,10 +19,13 @@ public class RomNumToAraNumConverter {
 		
 		//Loop through each character in the Roman Numeral String
 		for(int i=0; i<romNum.length(); i++){
+			
 			//Loop through each character in the romArray 
 			for(int j=0; j<romArray.length; j++){
+				
 				//checks to see if the characters match each other
-				if(romNum.substring(i, i+1) == romArray[j]){
+				if(romNum.substring(i, i+1).equals(romArray[j])){
+				
 					//if it does than the corresponding value is added to araNum
 					araNum += araArray[j];
 				}
