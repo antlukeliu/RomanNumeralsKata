@@ -134,6 +134,20 @@ public class RomNumToAraNumConverterTest {
 		
 	}
 	
+	@Test
+	public void testForLX() {
+
+		assertEquals(61, RtAConverter.convert("LXI"));
+		assertEquals(62, RtAConverter.convert("LXII"));
+		assertEquals(63, RtAConverter.convert("LXIII"));
+		assertEquals(64, RtAConverter.convert("LXIV"));
+		assertEquals(65, RtAConverter.convert("LXV"));
+		assertEquals(66, RtAConverter.convert("LXVI"));
+		assertEquals(68, RtAConverter.convert("LXVIII"));
+		assertEquals(69, RtAConverter.convert("LXIX"));
+		
+	}
+	
 	
 
 }
