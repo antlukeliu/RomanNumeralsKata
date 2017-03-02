@@ -23,11 +23,26 @@ public class RomNumToAraNumConverter {
 			//Loop through each character in the romArray 
 			for(int j=0; j<romArray.length; j++){
 				
+				//
+				if(romNum.length() == 1){
+					for(int k=0; k<romArray.length;k++){
+						if(romNum.equals(romArray[k])){
+							return araArray[k];
+						}
+					}
+				}
 				//checks to see if the characters match each other
-				if(romNum.substring(i, i+1).equals(romArray[j])){
+				else if(romNum.substring(i, i+1).equals(romArray[j])){
 				
-					//if it does than the corresponding value is added to araNum
-					araNum += araArray[j];
+					if(romNum.substring(i,i+1).equals("I") && romNum.substring(i+1,i+2).equals("V")){
+						araNum += 4;
+						i +=2;
+					}
+					
+					else{
+						araNum += araArray[j];
+						
+					}
 				}
 			}
 		}
