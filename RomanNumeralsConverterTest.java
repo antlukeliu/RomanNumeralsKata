@@ -104,5 +104,14 @@ public class RomanNumeralsConverterTest {
 		assertEquals("CCCXCVI", converter.convert("396"));	
 	}
 	
+	@Test
+	public void testForFourHundreds() {
+
+		assertEquals("CD", converter.convert("400"));
+		assertEquals("CDXXXIV", converter.convert("434"));
+		assertEquals("CDL", converter.convert("450"));
+		assertEquals("CDXCVI", converter.convert("496"));	
+	}
+	
 	
 }
