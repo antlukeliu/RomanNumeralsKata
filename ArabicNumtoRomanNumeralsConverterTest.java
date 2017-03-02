@@ -3,13 +3,13 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RomanNumeralsConverterTest {
+public class ArabicNumtoRomanNumeralsConverterTest {
 	
-	RomanNumeralsConverter converter;
+	ArabicNumtoRomanNumeralsConverter converter;
 
 	@Before
 	public void setUp(){
-		converter = new RomanNumeralsConverter();
+		converter = new ArabicNumtoRomanNumeralsConverter();
 	}
 	
 

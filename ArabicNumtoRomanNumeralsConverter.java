@@ -16,7 +16,7 @@
 //romanNumString and 2 be the value of your variable number (7-5). Loop again to find 2 >= 1 
 //so "VI" continue until number reaches 0
 
-public class RomanNumeralsConverter {
+public class ArabicNumtoRomanNumeralsConverter {
 
 	public String convert(String number) {
 		
