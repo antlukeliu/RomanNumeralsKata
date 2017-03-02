@@ -45,7 +45,7 @@ public class RomNumToAraNumConverter {
 						}
 						else if(romNum.substring(i,i+1).equals("X") && romNum.substring(i+1,i+2).equals("L")){
 							araNum += 40;
-							i +=1; //Unsure why this works 
+							i +=1; //Unsure why this works
 						}
 						else{
 							araNum += araArray[j];

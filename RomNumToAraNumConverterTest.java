@@ -148,6 +148,34 @@ public class RomNumToAraNumConverterTest {
 		
 	}
 	
+	@Test
+	public void testForLXX() {
+
+		assertEquals(71, RtAConverter.convert("LXXI"));
+		assertEquals(72, RtAConverter.convert("LXXII"));
+		assertEquals(73, RtAConverter.convert("LXXIII"));
+		assertEquals(74, RtAConverter.convert("LXXIV"));
+		assertEquals(75, RtAConverter.convert("LXXV"));
+		assertEquals(76, RtAConverter.convert("LXXVI"));
+		assertEquals(78, RtAConverter.convert("LXXVIII"));
+		assertEquals(79, RtAConverter.convert("LXXIX"));
+		
+	}
+	
+	@Test
+	public void testForLXXX() {
+
+		assertEquals(81, RtAConverter.convert("LXXXI"));
+		assertEquals(82, RtAConverter.convert("LXXXII"));
+		assertEquals(83, RtAConverter.convert("LXXXIII"));
+		assertEquals(84, RtAConverter.convert("LXXXIV"));
+		assertEquals(85, RtAConverter.convert("LXXXV"));
+		assertEquals(86, RtAConverter.convert("LXXXVI"));
+		assertEquals(88, RtAConverter.convert("LXXXVIII"));
+		assertEquals(89, RtAConverter.convert("LXXXIX"));
+		
+	}
+	
 	
 
 }
