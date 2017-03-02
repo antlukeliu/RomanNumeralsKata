@@ -10,7 +10,7 @@ Locate repo in terminal/cmd
 
 Compile RomanNumeralsConverter class
 ```
-javac RomanNumeralsConverter
+javac RomanNumeralsConverter.java
 ```
 
 Compile the test: 
