@@ -85,4 +85,14 @@ public class RomanNumeralsConverterTest {
 		assertEquals("CXCVI", converter.convert("196"));	
 	}
 	
+	@Test
+	public void testForTwoHundredsAndThreeHundreds() {
+
+		assertEquals("CC", converter.convert("200"));
+		assertEquals("CCXXXIV", converter.convert("234"));
+		assertEquals("CCCL", converter.convert("350"));
+		assertEquals("CCCXCVI", converter.convert("396"));	
+	}
+	
+	
 }
