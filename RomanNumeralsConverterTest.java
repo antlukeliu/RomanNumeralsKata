@@ -142,5 +142,14 @@ public class RomanNumeralsConverterTest {
 		assertEquals("CMXCVI", converter.convert("996"));	
 	}
 	
+	@Test
+	public void testForThousand() {
+
+		assertEquals("M", converter.convert("1000"));
+		assertEquals("MXXXIV", converter.convert("1034"));
+		assertEquals("ML", converter.convert("1050"));
+		assertEquals("MXCVI", converter.convert("1096"));	
+	}
+	
 	
 }
