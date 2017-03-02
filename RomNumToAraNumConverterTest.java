@@ -120,6 +120,20 @@ public class RomNumToAraNumConverterTest {
 		
 	}
 	
+	@Test
+	public void testForLtoLX() {
+
+		assertEquals(51, RtAConverter.convert("LI"));
+		assertEquals(52, RtAConverter.convert("LII"));
+		assertEquals(53, RtAConverter.convert("LIII"));
+		assertEquals(54, RtAConverter.convert("LIV"));
+		assertEquals(55, RtAConverter.convert("LV"));
+		assertEquals(56, RtAConverter.convert("LVI"));
+		assertEquals(58, RtAConverter.convert("LVIII"));
+		assertEquals(59, RtAConverter.convert("LIX"));
+		
+	}
+	
 	
 
 }
