@@ -34,11 +34,15 @@ public class RomNumToAraNumConverter {
 				//checks to see if the characters match each other
 				else if(romNum.substring(i, i+1).equals(romArray[j])){
 				
-					if(romNum.substring(i,i+1).equals("I") && romNum.substring(i+1,i+2).equals("V")){
-						araNum += 4;
-						i +=2;
+					if(i+1 < romNum.length()){
+						if(romNum.substring(i,i+1).equals("I") && romNum.substring(i+1,i+2).equals("V")){
+							araNum += 4;
+							i +=2;
+						}
+						else{
+							araNum += araArray[j];
+						}
 					}
-					
 					else{
 						araNum += araArray[j];
 						
