@@ -76,4 +76,13 @@ public class RomanNumeralsConverterTest {
 		assertEquals("XCIX", converter.convert("99"));	
 	}
 	
+	@Test
+	public void testForHundreds() {
+
+		assertEquals("C", converter.convert("100"));
+		assertEquals("CIV", converter.convert("104"));
+		assertEquals("CL", converter.convert("150"));
+		assertEquals("CXCVI", converter.convert("196"));	
+	}
+	
 }
