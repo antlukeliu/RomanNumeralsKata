@@ -15,50 +15,64 @@ public class RomanNumeralsConverterTest {
 
 	// Test to see if enter 1 it converts to I
 	@Test
-	public void testforOne() {
+	public void testForOne() {
 
 		assertEquals("Test1 didn't work", "I", converter.convert("1"));
 	}
 
 	@Test
-	public void testforTwo() {
+	public void testForTwo() {
 
 		assertEquals("Test2 didn't work", "II", converter.convert("2"));
 	}
 	
 	@Test
-	public void testforThree() {
+	public void testForThree() {
 
 		assertEquals("Test3 didn't work", "III", converter.convert("3"));
 	}
 	
 	@Test
-	public void testforFour() {
+	public void testForFour() {
 
 		assertEquals("Test4 didn't work", "IV", converter.convert("4"));
 	}
 	
 	@Test
-	public void testforFiveThroughEight() {
+	public void testForFiveThroughEight() {
 
 		assertEquals("Test5 didn't work", "V", converter.convert("5"));
 		assertEquals("Test5 didn't work", "X", converter.convert("10"));
 		
 	}
 	@Test
-	public void testforNines() {
+	public void testForNines() {
 
 		assertEquals("IX", converter.convert("9"));
 		assertEquals("XIX", converter.convert("19"));
 		
 	}
 	@Test
-	public void testforFourtyandFifty() {
+	public void testForFourtyandFifty() {
 
 		assertEquals("XL", converter.convert("40"));
 		assertEquals("L", converter.convert("50"));
 		
 	}
+	@Test
+	public void testforSixtyThroughEighty() {
+
+		assertEquals("LXII", converter.convert("62"));
+		assertEquals("LXXV", converter.convert("75"));
+		assertEquals("LXXXIV", converter.convert("84"));	
+	}
 	
+	@Test
+	public void testForNinety() {
+
+		assertEquals("LXII", converter.convert("62"));
+		assertEquals("LXXV", converter.convert("75"));
+		assertEquals("LXXXIV", converter.convert("84"));	
+	}
 	
 }
