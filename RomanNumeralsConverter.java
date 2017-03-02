@@ -20,8 +20,8 @@ public class RomanNumeralsConverter {
 
 	public String convert(String number) {
 		
-		int[] arabicNumArray = {10,9,5,4,1};
-		String[] romanNumArray = {"X", "IX", "V", "IV", "I"};
+		int[] arabicNumArray = {50,40,10,9,5,4,1};
+		String[] romanNumArray = {"L","XL","X", "IX", "V", "IV", "I"};
 		String romanNum = "";
 		
 		int inputNum = Integer.parseInt(number);
