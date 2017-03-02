@@ -122,5 +122,16 @@ public class RomanNumeralsConverterTest {
 		assertEquals("DXCVI", converter.convert("596"));	
 	}
 	
+	@Test
+	public void testForSixHundredsToEightHundreds() {
+
+		assertEquals("DC", converter.convert("600"));
+		assertEquals("DCXXXIV", converter.convert("634"));
+		assertEquals("DCC", converter.convert("700"));
+		assertEquals("DCCL", converter.convert("750"));
+		assertEquals("DCCC", converter.convert("800"));
+		assertEquals("DCCCXCVI", converter.convert("896"));	
+	}
+	
 	
 }
