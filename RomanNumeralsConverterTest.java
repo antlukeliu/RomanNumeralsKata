@@ -53,6 +53,15 @@ public class RomanNumeralsConverterTest {
 		
 	}
 	@Test
+	public void testForTwentyandThirty() {
+
+		assertEquals("XX", converter.convert("20"));
+		assertEquals("XXX", converter.convert("30"));
+		
+	}
+	
+	
+	@Test
 	public void testForFourtyandFifty() {
 
 		assertEquals("XL", converter.convert("40"));
