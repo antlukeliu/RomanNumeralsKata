@@ -70,9 +70,10 @@ public class RomanNumeralsConverterTest {
 	@Test
 	public void testForNinety() {
 
-		assertEquals("LXII", converter.convert("62"));
-		assertEquals("LXXV", converter.convert("75"));
-		assertEquals("LXXXIV", converter.convert("84"));	
+		assertEquals("XC", converter.convert("90"));
+		assertEquals("XCIV", converter.convert("94"));
+		assertEquals("XCV", converter.convert("95"));
+		assertEquals("XCIX", converter.convert("99"));	
 	}
 	
 }
