@@ -133,5 +133,14 @@ public class RomanNumeralsConverterTest {
 		assertEquals("DCCCXCVI", converter.convert("896"));	
 	}
 	
+	@Test
+	public void testForNineHundreds() {
+
+		assertEquals("CM", converter.convert("900"));
+		assertEquals("CMXXXIV", converter.convert("934"));
+		assertEquals("CML", converter.convert("950"));
+		assertEquals("CMXCVI", converter.convert("996"));	
+	}
+	
 	
 }
