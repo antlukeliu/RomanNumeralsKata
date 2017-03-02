@@ -53,7 +53,6 @@ public class RomNumToAraNumConverter {
 					}
 					else{
 						araNum += araArray[j];
-						
 					}
 				}
 			}
