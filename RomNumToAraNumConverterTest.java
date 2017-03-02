@@ -60,5 +60,20 @@ public class RomNumToAraNumConverterTest {
 		assertEquals(10, RtAConverter.convert("X"));
 	}
 	
+	@Test
+	public void testFor10s() {
+
+		assertEquals(11, RtAConverter.convert("XI"));
+		assertEquals(12, RtAConverter.convert("XII"));
+		assertEquals(13, RtAConverter.convert("XIII"));
+		assertEquals(14, RtAConverter.convert("XIV"));
+		assertEquals(15, RtAConverter.convert("XV"));
+		assertEquals(16, RtAConverter.convert("XVI"));
+		assertEquals(17, RtAConverter.convert("XVII"));
+		assertEquals(18, RtAConverter.convert("XVIII"));
+		assertEquals(19, RtAConverter.convert("XIX"));
+		
+	}
+	
 
 }
