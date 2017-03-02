@@ -17,5 +17,11 @@ public class RomNumToAraNumConverterTest {
 
 		assertEquals(1, RtAConverter.convert("I"));
 	}
+	
+	@Test
+	public void testForII() {
+
+		assertEquals(2, RtAConverter.convert("II"));
+	}
 
 }
