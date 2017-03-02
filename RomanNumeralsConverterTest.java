@@ -94,6 +94,7 @@ public class RomanNumeralsConverterTest {
 		assertEquals("CXCVI", converter.convert("196"));	
 	}
 	
+	//Problem I run into is array always goes to index of one instead back to zero
 	@Test
 	public void testForTwoHundredsAndThreeHundreds() {
 

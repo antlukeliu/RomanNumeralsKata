@@ -32,7 +32,7 @@ public class RomanNumeralsConverter {
 				if(inputNum >= arabicNumArray[i]){
 					romanNum += romanNumArray[i];
 					inputNum -= arabicNumArray[i];
-					i=0;
+					i=-1; //will reset the index to 0
 				}
 			}
 		}
