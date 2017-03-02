@@ -54,6 +54,11 @@ public class RomNumToAraNumConverterTest {
 
 		assertEquals(9, RtAConverter.convert("IX"));
 	}
+	@Test
+	public void testForX() {
+
+		assertEquals(10, RtAConverter.convert("X"));
+	}
 	
 
 }
