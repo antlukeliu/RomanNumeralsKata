@@ -75,5 +75,19 @@ public class RomNumToAraNumConverterTest {
 		
 	}
 	
+	@Test
+	public void testForTwentiesandThirties() {
+
+		assertEquals(20, RtAConverter.convert("XX"));
+		assertEquals(24, RtAConverter.convert("XXIV"));
+		assertEquals(25, RtAConverter.convert("XXV"));
+		assertEquals(30, RtAConverter.convert("XXX"));
+		assertEquals(32, RtAConverter.convert("XXXII"));
+		assertEquals(38, RtAConverter.convert("XXXVIII"));
+		assertEquals(39, RtAConverter.convert("XXXIX"));
+
+		
+	}
+	
 
 }
