@@ -37,7 +37,7 @@ public class RomNumToAraNumConverter {
 					if(i+1 < romNum.length()){
 						if(romNum.substring(i,i+1).equals("I") && romNum.substring(i+1,i+2).equals("V")){
 							araNum += 4;
-							i +=2;
+							i +=2; //I wanted to skip a character so if it is IV than it starts on the next character after
 						}
 						else if(romNum.substring(i,i+1).equals("I") && romNum.substring(i+1,i+2).equals("X")){
 							araNum += 9;
@@ -45,7 +45,7 @@ public class RomNumToAraNumConverter {
 						}
 						else if(romNum.substring(i,i+1).equals("X") && romNum.substring(i+1,i+2).equals("L")){
 							araNum += 40;
-							i +=1;
+							i +=1; //Unsure why this works 
 						}
 						else{
 							araNum += araArray[j];
