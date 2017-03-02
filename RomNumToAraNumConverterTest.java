@@ -41,5 +41,13 @@ public class RomNumToAraNumConverterTest {
 
 		assertEquals(4, RtAConverter.convert("IV"));
 	}
+	
+	@Test
+	public void testForSixThruEight() {
+
+		assertEquals(6, RtAConverter.convert("VI"));
+		assertEquals(7, RtAConverter.convert("VII"));
+		assertEquals(8, RtAConverter.convert("VIII"));
+	}
 
 }
