@@ -29,5 +29,11 @@ public class RomNumToAraNumConverterTest {
 
 		assertEquals(3, RtAConverter.convert("III"));
 	}
+	
+	@Test
+	public void testForV() {
+
+		assertEquals(5, RtAConverter.convert("V"));
+	}
 
 }
