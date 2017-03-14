@@ -214,6 +214,13 @@ public class RomNumToAraNumConverterTest {
 		assertEquals(500, RtAConverter.convert("D"));
 	}
 	
+	@Test
+	public void testForCD() {
+
+		assertEquals(400, RtAConverter.convert("CD"));
+	}
+	
+	
 	
 
 }
