@@ -37,15 +37,19 @@ public class RomNumToAraNumConverter {
 					if(i+1 < romNum.length()){
 						if(romNum.substring(i,i+1).equals("I") && romNum.substring(i+1,i+2).equals("V")){
 							araNum += 4;
-							i +=2; //This is ambiguous because I is the last thing in the array so whether it is 1 or any positive number 
+							i +=1; //This is ambiguous because I is the last thing in the array so whether it is 1 or any positive number 
 									//It will end the for loop
 						}
 						else if(romNum.substring(i,i+1).equals("I") && romNum.substring(i+1,i+2).equals("X")){
 							araNum += 9;
-							i +=2;
+							i +=1;
 						}
 						else if(romNum.substring(i,i+1).equals("X") && romNum.substring(i+1,i+2).equals("L")){
 							araNum += 40;
+							i +=1; //This is able to work because in the array L is before X so it will continue  
+						}
+						else if(romNum.substring(i,i+1).equals("X") && romNum.substring(i+1,i+2).equals("C")){
+							araNum += 90;
 							i +=1; //This is able to work because in the array L is before X so it will continue  
 						}
 						else{
