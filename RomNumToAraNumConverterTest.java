@@ -182,6 +182,12 @@ public class RomNumToAraNumConverterTest {
 		assertEquals(100, RtAConverter.convert("C"));
 	}
 	
+	@Test
+	public void testForXC() {
+
+		assertEquals(90, RtAConverter.convert("XC"));
+	}
+	
 	
 
 }
