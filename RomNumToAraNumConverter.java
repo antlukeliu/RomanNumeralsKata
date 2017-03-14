@@ -14,8 +14,8 @@ public class RomNumToAraNumConverter {
 
 	public int convert(String romNum) {
 		int araNum = 0;
-		String[] romArray = {"L","X","V","I"};
-		int[] araArray = {50,10,5,1};
+		String[] romArray = {"C","L","X","V","I"};
+		int[] araArray = {100,50,10,5,1};
 		
 		//Loop through each character in the Roman Numeral String
 		for(int i=0; i<romNum.length(); i++){
