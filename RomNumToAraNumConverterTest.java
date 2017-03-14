@@ -188,6 +188,20 @@ public class RomNumToAraNumConverterTest {
 		assertEquals(90, RtAConverter.convert("XC"));
 	}
 	
+	@Test
+	public void testForXCI() {
+
+		assertEquals(91, RtAConverter.convert("XCI"));
+		assertEquals(92, RtAConverter.convert("XCII"));
+		assertEquals(93, RtAConverter.convert("XCIII"));
+		assertEquals(94, RtAConverter.convert("XCIV"));
+		assertEquals(95, RtAConverter.convert("XCV"));
+		assertEquals(96, RtAConverter.convert("XCVI"));
+		assertEquals(98, RtAConverter.convert("XCVIII"));
+		assertEquals(99, RtAConverter.convert("XCIX"));
+		
+	}
+	
 	
 
 }
