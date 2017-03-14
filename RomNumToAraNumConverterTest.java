@@ -202,9 +202,16 @@ public class RomNumToAraNumConverterTest {
 		
 	}
 	
+	@Test
 	public void testForCC() {
 
 		assertEquals(200, RtAConverter.convert("CC"));
+	}
+	
+	@Test
+	public void testForD() {
+
+		assertEquals(500, RtAConverter.convert("D"));
 	}
 	
 	
