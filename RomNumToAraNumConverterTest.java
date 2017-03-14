@@ -220,6 +220,12 @@ public class RomNumToAraNumConverterTest {
 		assertEquals(400, RtAConverter.convert("CD"));
 	}
 	
+	@Test
+	public void testForM() {
+
+		assertEquals(1000, RtAConverter.convert("M"));
+	}
+	
 	
 	
 
