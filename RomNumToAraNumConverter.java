@@ -50,7 +50,11 @@ public class RomNumToAraNumConverter {
 						}
 						else if(romNum.substring(i,i+1).equals("X") && romNum.substring(i+1,i+2).equals("C")){
 							araNum += 90;
-							i +=1; //This is able to work because in the array L is before X so it will continue  
+							i +=1;  
+						}
+						else if(romNum.substring(i,i+1).equals("C") && romNum.substring(i+1,i+2).equals("D")){
+							araNum += 400;
+							i +=1;   
 						}
 						else{
 							araNum += araArray[j];
