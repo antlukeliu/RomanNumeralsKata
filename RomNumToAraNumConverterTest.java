@@ -176,6 +176,12 @@ public class RomNumToAraNumConverterTest {
 		
 	}
 	
+	@Test
+	public void testForC() {
+
+		assertEquals(100, RtAConverter.convert("C"));
+	}
+	
 	
 
 }
